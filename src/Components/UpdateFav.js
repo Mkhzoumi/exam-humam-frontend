@@ -33,11 +33,11 @@ export class UpdateFav extends Component {
         <Form>
   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
     <Form.Label>Name</Form.Label>
-    <Form.Control type="text" placeholder="enter name"  onChange={(e)=>{this.setState({nameFromUsr:e.target.value})}}/>
+    <Form.Control type="text" placeholder={this.props.value.strDrink}  onChange={(e)=>{this.setState({nameFromUsr:e.target.value})}}/>
   </Form.Group>
   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
     <Form.Label>Image Url</Form.Label>
-    <Form.Control type="text" placeholder="enter img url" onChange={(e)=>{this.setState({imgFromUsr:e.target.value})}} />
+    <Form.Control type="text" placeholder={this.props.value.strDrinkThumb} onChange={(e)=>{this.setState({imgFromUsr:e.target.value})}} />
   </Form.Group>
  
 </Form>
