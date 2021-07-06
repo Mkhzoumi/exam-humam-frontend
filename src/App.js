@@ -16,10 +16,10 @@ export class App extends Component {
         <Header/>
         <Router>
         <Switch>
-          <Route path="/Main">
+          <Route exact path="/">
             <Main />
           </Route>
-          <Route path="/Favorite">
+          <Route exact path="/Favorite">
         <Favorite/>
           </Route>
         </Switch>

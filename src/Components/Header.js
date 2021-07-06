@@ -5,9 +5,9 @@ export class Header extends Component {
     render() {
         return (
 
-            <Nav defaultActiveKey="/Main" as="ul">
+            <Nav defaultActiveKey="/" as="ul">
                 <Nav.Item as="li">
-                    <Nav.Link href="/Main">Main</Nav.Link>
+                    <Nav.Link href="/">Main</Nav.Link>
                 </Nav.Item>
                 <Nav.Item as="li">
                     <Nav.Link href="/Favorite">Favorite</Nav.Link>
