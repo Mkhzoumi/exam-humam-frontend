@@ -33,9 +33,7 @@ export class Main extends Component {
     }
     render() {
         return (
-
             <div style={{display:'flex' , 'flex-wrap': 'wrap', justifyContent : 'center'  , gap:'20px'}}>
-
                 {this.state.dataStatus &&
                     this.state.data.map(value => {
                         return (<Card style={{ width: '18rem' }}>
@@ -45,14 +43,9 @@ export class Main extends Component {
                                 <Button variant="primary" onClick={() => { this.addFav(value) }}>Add to Favorite</Button>
                             </Card.Body>
                         </Card>
-
                         )
                     })}
-
             </div>
-
-
-
         )
     }
 }
